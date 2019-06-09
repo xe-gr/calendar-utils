@@ -1,8 +1,37 @@
 package gr.xe.calendarUtils;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Holidays {
+
+    public List<LocalDate> getAllPublicHolidays() {
+        List<LocalDate> lst = new ArrayList<LocalDate>();
+
+        addIfNotPresent(lst, getNewYearDay());
+        addIfNotPresent(lst, getEpiphany());
+        addIfNotPresent(lst, getGreenMonday());
+        addIfNotPresent(lst, getMarch25());
+        addIfNotPresent(lst, getOrthodoxEasterFriday());
+        addIfNotPresent(lst, getOrthodoxEasterDay());
+        addIfNotPresent(lst, getOrthodoxEasterMonday());
+        addIfNotPresent(lst, getMayDay());
+        addIfNotPresent(lst, getHolySpirit());
+        addIfNotPresent(lst, getTheAssumption());
+        addIfNotPresent(lst, getOctober28());
+        addIfNotPresent(lst, getChristmasDay());
+        addIfNotPresent(lst, getChristmasNextDay());
+
+        return lst;
+    }
+
+    private void addIfNotPresent (List<LocalDate> list, LocalDate date) {
+        if (!list.contains(date))
+        {
+            list.add(date);
+        }
+    }
 
     public int getYear() {
         return year;
