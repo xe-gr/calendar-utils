@@ -3,6 +3,143 @@ package gr.xe.calendarUtils;
 import java.time.LocalDate;
 
 public class Holidays {
+
+    public int getYear() {
+        return year;
+    }
+
+    protected void setYear(int year) {
+        this.year = year;
+    }
+
+    public LocalDate getNewYearDay() {
+        return newYearDay;
+    }
+
+    protected void setNewYearDay(LocalDate newYearDay) {
+        this.newYearDay = newYearDay;
+    }
+
+    public LocalDate getEpiphany() {
+        return epiphany;
+    }
+
+    protected void setEpiphany(LocalDate epiphany) {
+        this.epiphany = epiphany;
+    }
+
+    public LocalDate getGreenMonday() {
+        return greenMonday;
+    }
+
+    protected void setGreenMonday(LocalDate greenMonday) {
+        this.greenMonday = greenMonday;
+    }
+
+    public LocalDate getMarch25() {
+        return march25;
+    }
+
+    protected void setMarch25(LocalDate march25) {
+        this.march25 = march25;
+    }
+
+    public LocalDate getOrthodoxEasterFriday() {
+        return orthodoxEasterFriday;
+    }
+
+    protected void setOrthodoxEasterFriday(LocalDate orthodoxEasterFriday) {
+        this.orthodoxEasterFriday = orthodoxEasterFriday;
+    }
+
+    public LocalDate getOrthodoxEasterDay() {
+        return orthodoxEasterDay;
+    }
+
+    protected void setOrthodoxEasterDay(LocalDate orthodoxEasterDay) {
+        this.orthodoxEasterDay = orthodoxEasterDay;
+    }
+
+    public LocalDate getOrthodoxEasterMonday() {
+        return orthodoxEasterMonday;
+    }
+
+    protected void setOrthodoxEasterMonday(LocalDate orthodoxEasterMonday) {
+        this.orthodoxEasterMonday = orthodoxEasterMonday;
+    }
+
+    public LocalDate getCatholicEasterFriday() {
+        return catholicEasterFriday;
+    }
+
+    protected void setCatholicEasterFriday(LocalDate catholidEasterFriday) {
+        this.catholicEasterFriday = catholidEasterFriday;
+    }
+
+    public LocalDate getCatholicEasterDay() {
+        return catholicEasterDay;
+    }
+
+    protected void setCatholicEasterDay(LocalDate catholicEasterDay) {
+        this.catholicEasterDay = catholicEasterDay;
+    }
+
+    public LocalDate getCatholicEasterMonday() {
+        return catholicEasterMonday;
+    }
+
+    protected void setCatholicEasterMonday(LocalDate catholicEasterMonday) {
+        this.catholicEasterMonday = catholicEasterMonday;
+    }
+
+    public LocalDate getMayDay() {
+        return mayDay;
+    }
+
+    protected void setMayDay(LocalDate mayDay) {
+        this.mayDay = mayDay;
+    }
+
+    public LocalDate getHolySpirit() {
+        return holySpirit;
+    }
+
+    protected void setHolySpirit(LocalDate holySpirit) {
+        this.holySpirit = holySpirit;
+    }
+
+    public LocalDate getTheAssumption() {
+        return theAssumption;
+    }
+
+    protected void setTheAssumption(LocalDate theAssumption) {
+        this.theAssumption = theAssumption;
+    }
+
+    public LocalDate getOctober28() {
+        return october28;
+    }
+
+    protected void setOctober28(LocalDate october28) {
+        this.october28 = october28;
+    }
+
+    public LocalDate getChristmasDay() {
+        return christmasDay;
+    }
+
+    protected void setChristmasDay(LocalDate christmasDay) {
+        this.christmasDay = christmasDay;
+    }
+
+    public LocalDate getChristmasNextDay() {
+        return christmasNextDay;
+    }
+
+    protected void setChristmasNextDay(LocalDate christmasNextDay) {
+        this.christmasNextDay = christmasNextDay;
+    }
+
     private int year;
     private LocalDate newYearDay;
     private LocalDate epiphany;
@@ -11,7 +148,7 @@ public class Holidays {
     private LocalDate orthodoxEasterFriday;
     private LocalDate orthodoxEasterDay;
     private LocalDate orthodoxEasterMonday;
-    private LocalDate catholidEasterFriday;
+    private LocalDate catholicEasterFriday;
     private LocalDate catholicEasterDay;
     private LocalDate catholicEasterMonday;
     private LocalDate mayDay;
@@ -20,80 +157,4 @@ public class Holidays {
     private LocalDate october28;
     private LocalDate christmasDay;
     private LocalDate christmasNextDay;
-
-    public Holidays (int year) {
-        this.year = year;
-    }
-
-    public int Year() {
-        return year;
-    }
-
-    protected void setOrthodoxEasterDay (LocalDate date) {
-        orthodoxEasterDay = date;
-    }
-
-    public LocalDate getNewYearDay() {
-        return newYearDay;
-    }
-
-    public LocalDate getEpiphany() {
-        return epiphany;
-    }
-
-    public LocalDate getGreenMonday() {
-        return greenMonday;
-    }
-
-    public LocalDate getMarch25() {
-        return march25;
-    }
-
-    public LocalDate getOrthodoxEasterFriday() {
-        return orthodoxEasterFriday;
-    }
-
-    public LocalDate getOrthodoxEasterDay() {
-        return orthodoxEasterDay;
-    }
-
-    public LocalDate getOrthodoxEasterMonday() {
-        return orthodoxEasterMonday;
-    }
-
-    public LocalDate getCatholidEasterFriday() {
-        return catholidEasterFriday;
-    }
-
-    public LocalDate getCatholicEasterDay() {
-        return catholicEasterDay;
-    }
-
-    public LocalDate getCatholicEasterMonday() {
-        return catholicEasterMonday;
-    }
-
-    public LocalDate getMayDay() {
-        return mayDay;
-    }
-
-    public LocalDate getHolySpirit() {
-        return holySpirit;
-    }
-
-    public LocalDate getTheAssumption() {
-        return theAssumption;
-    }
-
-    public LocalDate getOctober28() {
-        return october28;
-    }
-
-    public LocalDate getChristmasDay() {
-        return christmasDay;
-    }
-
-    public LocalDate getChristmasNextDay() {
-        return christmasNextDay;
-    }
 }

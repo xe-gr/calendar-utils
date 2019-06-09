@@ -11,14 +11,14 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class OrthodoxEasterDayTests {
+public class ChristmasDayTests {
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
-                { 2018, LocalDate.of(2018, 4, 8) },
-                { 2019, LocalDate.of(2019, 4, 28) },
-                { 2020, LocalDate.of(2020, 4, 19) },
+                { 2018, LocalDate.of(2018, 12, 25) },
+                { 2019, LocalDate.of(2019, 12, 25) },
+                { 2020, LocalDate.of(2020, 12, 25) },
         });
     }
 
@@ -26,7 +26,7 @@ public class OrthodoxEasterDayTests {
     private LocalDate expected;
 
     //This constructor must be provided for the parameterized tests to work.
-    public OrthodoxEasterDayTests(int input, LocalDate expected) {
+    public ChristmasDayTests(int input, LocalDate expected) {
         this.input = input;
         this.expected = expected;
     }
@@ -35,6 +35,6 @@ public class OrthodoxEasterDayTests {
     public void VerifyDates() {
         Holidays holidays = HolidayCalculator.CreateHolidays(input);
 
-        assertEquals(expected, holidays.getOrthodoxEasterDay());
+        assertEquals(expected, holidays.getChristmasDay());
     }
 }
