@@ -11,7 +11,7 @@ public class HolidayCalculator {
 
         holidays.setNewYearDay(LocalDate.of(year, 1, 1));
 
-        holidays.setEpiphany(LocalDate.of(year, 1, 8));
+        holidays.setEpiphany(LocalDate.of(year, 1, 6));
 
         holidays.setGreenMonday(orthodoxEaster(year).minusDays(48));
 
@@ -42,7 +42,7 @@ public class HolidayCalculator {
     //
     // Kudos to https://blog.georgekosmidis.net/2013/04/28/c-calculating-orthodox-and-catholic-easter/
     //
-    
+
     private static LocalDate orthodoxEaster (int year) {
         int a = year % 19;
         int b = year % 7;

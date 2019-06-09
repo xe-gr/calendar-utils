@@ -16,9 +16,9 @@ public class EpiphanyTests {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
-                { 2018, LocalDate.of(2018, 1, 8) },
-                { 2019, LocalDate.of(2019, 1, 8) },
-                { 2020, LocalDate.of(2020, 1, 8) },
+                { 2018, LocalDate.of(2018, 1, 6) },
+                { 2019, LocalDate.of(2019, 1, 6) },
+                { 2020, LocalDate.of(2020, 1, 6) },
         });
     }
 
